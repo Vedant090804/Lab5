@@ -1,0 +1,153 @@
+$background-light: #f8f9fa;
+$background-dark: #222;
+$text-light: #000;
+$text-dark: #fff;
+$nav-active: blue;
+$nav-hover: #0056b3;
+$border-light: grey;
+$border-dark: white;
+$button-dark: #ccc;
+$button-light: #fff;
+
+body {
+    background-color: $background-light;
+    color: $text-light;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.mode-buttons {
+    display: flex;
+}
+
+.btn {
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#dark-mode {
+    background-color: $button-dark;
+    color: black;
+    border-radius: 5px 0 0 5px;
+}
+
+#light-mode {
+    background-color: $button-light;
+    color: black;
+    border-radius: 0 5px 5px 0;
+}
+
+
+h1 {
+    font-size: 2rem;
+}
+
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    width: 350px;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+
+.nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+
+    &.active {
+        background-color: $nav-active;
+        color: white;
+        font-weight: bold;
+    }
+
+    &:hover {
+        background-color: $nav-hover;
+        color: white;
+    }
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    height: 200px;
+}
+
+.image-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid $border-light;
+    padding: 0; 
+    border-radius: 10px;
+    background-color: white;
+    transition: border 0.3s ease, background 0.3s ease;
+    width: 32%;
+    height: 200px; 
+    box-sizing: border-box;
+}
+
+
+.circle-img {
+    width: 200px;
+    height: 195px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.dark-mode {
+    background-color: $background-dark;
+    color: $text-dark;
+
+    .nav-link {
+        color: #ccc;
+    }
+
+    .nav-link:hover {
+        background-color: $nav-hover;
+        color: white;
+    }
+
+    .image-card {
+        border-color: $border-dark;
+        background-color: #333;
+    }
+
+    #light-mode {
+        background-color: $button-light;
+    }
+
+    #dark-mode {
+        background-color: $button-dark;
+    }
+}
