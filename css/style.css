@@ -1,0 +1,130 @@
+body {
+  background-color: #f8f9fa;
+  color: #000;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.mode-buttons {
+  display: flex;
+}
+
+.btn {
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#dark-mode {
+  background-color: #ccc;
+  color: black;
+  border-radius: 5px 0 0 5px;
+}
+
+#light-mode {
+  background-color: #fff;
+  color: black;
+  border-radius: 0 5px 5px 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  width: 350px;
+  padding: 12px;
+  font-size: 1rem;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.nav-link.active {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+.nav-link:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  height: 200px;
+}
+
+.image-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2px solid grey;
+  padding: 0;
+  border-radius: 10px;
+  background-color: white;
+  transition: border 0.3s ease, background 0.3s ease;
+  width: 32%;
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.circle-img {
+  width: 200px;
+  height: 195px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+.dark-mode .nav-link {
+  color: #ccc;
+}
+.dark-mode .nav-link:hover {
+  background-color: #0056b3;
+  color: white;
+}
+.dark-mode .image-card {
+  border-color: white;
+  background-color: #333;
+}
+.dark-mode #light-mode {
+  background-color: #fff;
+}
+.dark-mode #dark-mode {
+  background-color: #ccc;
+}
+
+/*# sourceMappingURL=style.css.map */
